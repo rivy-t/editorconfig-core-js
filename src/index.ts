@@ -1,6 +1,5 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import * as semver from 'semver'
 
 import minimatch from './lib/fnmatch'
 import { parseString, ParseStringResult } from './lib/ini'
@@ -59,6 +58,15 @@ function getConfigFileNames(filepath: string, options: ParseOptions) {
   return paths
 }
 
+export function versionCompare(a?: string, b?: string) {
+  a = (a != null) ? a : '0.0.0'
+  b = (b != null) ? b : '0.0.0'
+  return a.localeCompare(b, /* locales */ void 0, { numeric: true })
+}
+versionCompare.gte = (a?: string, b?: string) => {
+  return versionCompare(a, b) >= 0
+}
+
 function processMatches(matches: KnownProps, version: string) {
   // Set indent_size to 'tab' if indent_size is unspecified and
   // indent_style is set to 'tab'.
@@ -66,7 +74,7 @@ function processMatches(matches: KnownProps, version: string) {
     'indent_style' in matches
     && matches.indent_style === 'tab'
     && !('indent_size' in matches)
-    && semver.gte(version, '0.10.0')
+    && versionCompare.gte(version, '0.10.0')
   ) {
     matches.indent_size = 'tab'
   }
