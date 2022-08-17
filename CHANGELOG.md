@@ -1,3 +1,9 @@
+## 0.16.0
+- Add publishing instructions to README.
+- Synchronize 'package.json' and 'package-lock.json'.
+- Upgrade 'lru-cache' dependency; improves usability for Deno.
+- Remove 'semver' dep; replace with simple `versionCompare()`; improves usability for Deno.
+
 ## 0.15.3
 - Move @types dependencies to dev dependencies.
 - Upgrade dependencies.
