@@ -201,6 +201,12 @@ To run the tests with increased verbosity (for debugging test failures):
 $ npm run-script test-verbose
 ```
 
+# Publishing
+
+```shell
+npm run pub
+```
+
 [EditorConfig C Core]: https://github.com/editorconfig/editorconfig-core
 [EditorConfig Python Core]: https://github.com/editorconfig/editorconfig-core-py
 [node]: http://nodejs.org/
