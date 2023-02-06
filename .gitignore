@@ -6,7 +6,6 @@ CTest*
 *.tmp
 *.vcxproj*
 *.log
-[Tt]ests/
 Makefile
 *.cmake
 /CMakeFiles/
