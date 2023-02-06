@@ -1,6 +1,6 @@
 {
   "name": "@rivy-labs/-x-e34b1a4b-ab58-4d84-9787-309e53006932",
-  "version": "0.16.1",
+  "version": "0.16.2",
   "description": "EditorConfig File Locator and Interpreter for Node.js",
   "keywords": [
     "editorconfig",
@@ -49,6 +49,7 @@
     "cpy-cli": "^2.0.0",
     "eclint": "^2.8.1",
     "mocha": "^5.2.0",
+    "os-paths": "https://cdn.jsdelivr.net/gh/rivy/js.os-paths@v7.3.0/dist/os-paths.tgz",
     "rimraf": "^2.6.3",
     "should": "^13.2.3",
     "tslint": "^5.13.1",
