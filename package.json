@@ -1,6 +1,6 @@
 {
   "name": "@rivy-labs/-x-e34b1a4b-ab58-4d84-9787-309e53006932",
-  "version": "0.16.0",
+  "version": "0.16.1",
   "description": "EditorConfig File Locator and Interpreter for Node.js",
   "keywords": [
     "editorconfig",
